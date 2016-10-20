@@ -43,9 +43,6 @@
    // deploy image
    sh &quot;${ocCmd} new-app tasks:latest -n dev&quot;
    sh &quot;${ocCmd} expose svc/tasks -n dev&quot;
-   // tag for stage
-   sh &quot;${ocCmd} tag dev/tasks:latest stage/tasks:${v}&quot;
-
 }
 
 def version() {
